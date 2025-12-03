@@ -10,7 +10,7 @@
     background-color: #3478bde1;
     display: flex;
     align-items: center;
-    gap: 700px; /* espaço entre texto e imagem */
+    gap: 600px; /* espaço entre texto e imagem */
 }
 
 .cabecalho img {
