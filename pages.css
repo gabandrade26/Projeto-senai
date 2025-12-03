@@ -10,7 +10,7 @@
     background-color: #3478bde1;
     display: flex;
     align-items: center;
-    gap: 600px; /* espaço entre texto e imagem */
+    gap: 400px; /* espaço entre texto e imagem */
 }
 
 .cabecalho img {
@@ -213,6 +213,18 @@
     margin-left: 170px;
 }
 
+#btn_jogo {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #3478bde1;
+    border-radius: 10px;
+    border: hidden;
+    color: white;
+    transition: 0.5s;
+    margin-left: 170px;
+}
+    
+
 #btn_plano:hover {
     background-color: black;
 }
@@ -294,11 +306,5 @@ div img {
         flex-direction: column;
         margin-left: 5px;
         margin-top: 20px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .cabecalho {
-        gap: 1200px;
     }
 }
