@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to top, #465A6D, #87AED3) repeat-x;
+}
+
+.corpo-site {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.corpo-site p {
+    margin-bottom: 23px;
+    margin-top: 20px;
+}
+
+.corpo-site a {
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+#formulario {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+    width: 30%;
+}
+
+.input-control input {
+    border: 2px solid white;
+    border-radius: 10px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+#btn_entrar {
+    border: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 100px;
+    transition: 0.5s;
+}
+
+#btn_cadastro {
+    border: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    margin-left: 100px;
+    transition: 0.5s;
+    margin-bottom: 216px;
+}
+
+#btn_entrar:hover {
+    background-color: black;
+    color: white;
+}
+
+#btn_cadastro:hover {
+    background-color: black;
+    color: white;
+}
+
+.corpo-site a:hover {
+    color: white;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
+    width: 20%;
+}
+
+.botoes img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.botoes button {
+    border: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.botoes button:hover {
+    background-color: #87AED3;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .corpo-site {
+        gap: 10px;
+    }
+
+    #formulario {
+        width: 50%;
+    }
+
+    #btn_entrar {
+        margin-left: 50px;
+    }
+
+    .botoes {
+        margin-right: 50px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 992px) {
+    .corpo-site {
+        gap: 10px;
+    }
+
+    #formulario {
+        width: 30%;
+    }
+
+    #btn_entrar {
+        margin-left: 150px;
+    }
+
+    #btn_cadastro {
+        margin-left: 150px;
+    }
+
+    body {
+        height: 923px;
+    }
+
+}

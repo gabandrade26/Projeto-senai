@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: #3478bde1;
+}
+
+.corpo-site {
+    margin: 40px 30px;
+}
+
+.texto_imagem {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espaço entre texto e imagem */
+    margin-top: 10px;
+}
+
+.texto_imagem img {
+    width: 20%;
+}
+
+#btn_login{
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #3478bde1;
+    border-radius: 10px;
+    border: hidden;
+    transition: 0.5s;
+}
+
+#btn_login a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn_login:hover {
+    background-color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .corpo-site {
+        margin: 40px 10px;
+        font-size: medium;
+    }
+
+    .texto_imagem {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .texto_imagem img {
+        width: 40%;
+    }
+}
